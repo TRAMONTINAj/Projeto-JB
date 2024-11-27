@@ -1,0 +1,116 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('/img/211191.jpg');
+    color: #333;
+ 
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 1.5em 0;
+    color: white;
+}
+header h1 {
+    font-size: 2rem;
+}
+
+/* Main */
+main {
+    margin-bottom: 70px;
+}
+
+/* Icons Section */
+.icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 2em;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.icon.xbox img:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 139, 0.7);
+    transform: scale(1.1);
+}
+
+.icon p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botão de Voltar */
+.back-btn {
+    background-color: #52aa00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+
+.back-btn:hover {
+    background-color: #009c53;
+}
+
+/* Info Container (na página playstation.html) */
+.info-container {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1em;
+    color: #00aa2b;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 1em;
+    color: #ADD8E6;
+}
+
+p {
+    font-size: 1rem;
+    margin: 1em 0;
+}
+
+ul {
+    margin-left: 2em;
+}
+

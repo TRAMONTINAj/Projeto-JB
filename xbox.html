@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações sobre Xbox</title>
+    <link rel="stylesheet" href="Styles/xbox.css">
+    <style>
+       /* Definir a imagem de fundo com transparência */
+       body {
+            background-image: url('img/211191.jpg'); /* Caminho para a imagem de fundo */
+            background-size: cover; /* Faz a imagem cobrir toda a tela */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Impede a repetição da imagem */
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Garante que a imagem cubra a altura da tela */
+            color: rgb(255, 255, 255); /* Cor do texto para contraste com o fundo */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Organizar o conteúdo verticalmente */
+            background-color: black;
+        }
+
+        /* Camada de sobreposição com fundo transparente */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de opacidade */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Estilos para o título centralizado no topo */
+        header {
+            text-align: center;
+            z-index: 2; /* Garantir que o cabeçalho apareça acima da sobreposição */
+            position: absolute;
+            top: 20px;
+            width: 100%;
+        }
+
+        /* Estilos para o conteúdo principal */
+        main {
+            position: relative;
+            z-index: 2; /* Garantir que o conteúdo apareça acima da sobreposição */
+            max-width: 800px;
+            padding: 20px;
+            margin-top: 360px; /* Espaço para o título */
+        }
+
+        /* Estilos para a seção de informações */
+        .info-container {
+            margin-top: 30px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Arial', sans-serif;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            word-wrap: break-word; /* Impede que o texto quebre de maneira indesejada */
+        }
+
+        /* Botão de voltar no canto direito */
+        .back-btn {
+            background-color: #00a030;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 2; /* Garantir que o botão fique acima da sobreposição */
+        }
+
+        .back-btn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .back-btn:hover {
+            background-color: #3db917;
+        }
+
+        /* Ajustes gerais para as imagens */
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        /* Estilos para o rodapé com fundo preto */
+        footer {
+            position: absolute;
+            bottom: -14em;
+            left: 0;
+            width: 100%;
+            height: 1%;
+            text-align: center;
+            background-color: rgb(0, 0, 0); /* Cor de fundo preta */
+            color: white; /* Cor da letra branca */
+            padding: 0 0;
+            font-size: 14px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    </style>
+</head>
+<body>
+
+    <!-- Camada de sobreposição com fundo transparente -->
+    <div class="overlay"></div>
+
+    <header>
+        <h1>Informações sobre Xbox</h1>
+    </header>
+
+    <main>
+        <!-- Seção de informações sobre a Microsoft -->
+        <section class="info-container">
+            <h2>Xbox</h2>
+
+            <h3>Criação</h3>
+            <p>O Xbox foi criado pela Microsoft e lançado em 2001. Ele se tornou um dos principais concorrentes do PlayStation no mercado de consoles, oferecendo uma plataforma robusta e inovadora.</p>
+
+            <h3>Desenvolvimento de Jogos Famosos</h3>
+            <p>Alguns dos jogos mais famosos da plataforma Xbox incluem:</p>
+            <ul>
+                <li><strong>Halo</strong></li>
+                <li><strong>Gears Of War</strong></li>
+                <li><strong>Forza Motorsport</strong></li>
+                <li><strong>Fable</strong></li>
+            </ul>
+
+            <h3>Adaptações</h3>
+            <p>O Xbox se adaptou às novas tecnologias com a introdução do Xbox Live, a possibilidade de jogar online, e ao longo das gerações o console se tornou um centro de entretenimento, incorporando streaming, mídia e mais.</p>
+
+            <h3>Consoles</h3>
+            <p>O Xbox teve várias versões, incluindo o Xbox Original, Xbox 360, Xbox One e o mais recente Xbox Series X/S, com inovações em performance, gráficos e jogos exclusivos.</p>
+
+
+        </section>
+    </main>
+
+    <!-- Botão de voltar -->
+    <button class="back-btn"><a href="index.html">← Voltar</a></button>
+
+    <!-- Rodapé com fundo preto -->
+    <footer>
+        <p>© 2024 - Microsoft Info</p>
+    </footer>
+
+</body>
+</html>
