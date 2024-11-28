@@ -32,12 +32,48 @@ main {
 /* Icons Section */
 .icons-container {
     display: flex;
+    background-color: #ffffff;
     justify-content: center;
-    gap: 5em;
+    gap: 10em;
     padding: 10em;
 }
 
-.icon {
+.Título-Consoles{
+    text-align: center;
+    padding: 0 0;
+    background: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.Título-Plataformas{
+    text-align: center;
+    padding: 0 0;
+    background: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.Consoles-Container {
+    display: flex;
+    background-color: #333;
+    justify-content: center;
+    gap: 17em;
+    padding: -30em;
+    z-index: 2;
+}
+
+.Console.PS img:hover {
+    transform: scale(1.1);
+}
+
+.Console.Xbox img:hover {
+    transform: scale(1.1);
+}
+
+.Console.Nintendo img:hover {
+    transform: scale(1.1);
+}
+
+.Console {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,8 +85,27 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.Console img {
+    width: 300px;
+    height: center;
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
+}
+
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    padding: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .icon img {
-    width: 100px;
+    width: 150px;
     height: auto;
     border-radius: 50%;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -103,6 +158,7 @@ main {
     margin: 0 auto;
 }
 
+
 h2 {
     font-size: 1.8rem;
     margin-bottom: 1em;
@@ -126,12 +182,13 @@ ul {
 
 /* Footer */
 footer {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -30em;
     left: 0;
     width: 100%;
     text-align: center;
     padding: 1em 0;
-    background: #f0f0f0;
+    background: #833cdf;
     color: rgb(0, 0, 0);
+
 }
